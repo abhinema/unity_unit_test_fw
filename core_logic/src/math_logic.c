@@ -5,10 +5,10 @@ Test File to check Unity test framework
 
 #include <stdio.h>
 
-int addition(int a, int b){
+unsigned char addition(unsigned char a, unsigned char b){
 return (a+b);
 }
 
-int multiplication(int a, int b){
+unsigned char multiplication(unsigned char a, unsigned char b){
 return (a*b);
 }
