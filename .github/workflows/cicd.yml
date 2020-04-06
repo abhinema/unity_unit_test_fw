@@ -19,5 +19,4 @@ jobs:
       run: cd build && make
     - name: make check
       run: cd build/bin && ./unit_test
-    - name: make distcheck
-      run: make distcheck
+
