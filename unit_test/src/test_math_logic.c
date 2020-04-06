@@ -16,23 +16,23 @@ void tearDown(){
 }
 
 void testAddition(void){
-    TEST_ASSERT_EQUAL_INT(5, addition(3,2));
+    TEST_ASSERT_EQUAL_UINT8_MESSAGE(5, addition(3,2),"Unit Test Case1: testAddition" );
+    TEST_ASSERT_EQUAL_UINT8_MESSAGE(6, addition(3,2),"Unit Test Case2: testAddition");
+    TEST_ASSERT_EQUAL_UINT8_MESSAGE(10, addition(3,2),"Unit Test Case3: testAddition");
 }
 
-void testAddition1(void){
-    TEST_ASSERT_EQUAL_INT(6, addition(3,2));
-    TEST_ASSERT_EQUAL_INT(10, addition(3,2));
-}
 void testAdditionboundary(void){
-    TEST_ASSERT_EQUAL_INT(255, addition(126,129));
-    TEST_ASSERT_EQUAL_INT(255, addition(127,128));
-    TEST_ASSERT_EQUAL_UINT8_MESSAGE(2, addition(130,128),"Boundary condition Addition");
+    TEST_ASSERT_EQUAL_UINT8_MESSAGE(255, addition(126,129),"Unit Test Case1: Boundary condition Addition");
+    TEST_ASSERT_EQUAL_UINT8_MESSAGE(255, addition(127,128),"Unit Test Case2: Boundary condition Addition");
+    TEST_ASSERT_EQUAL_UINT8_MESSAGE(2, addition(130,128),"Unit Test Case3: Boundary condition Addition");
+    TEST_ASSERT_NOT_EQUAL_UINT8_MESSAGE(3, addition(130,128),"Unit Test Case4: Boundary condition Addition");
 }
 
 void testMultiplication(void){
-    TEST_ASSERT_EQUAL_INT(5, multiplication(3,2));
+    TEST_ASSERT_EQUAL_UINT8_MESSAGE(5, multiplication(3,2),"Unit Test Case1: testMultiplication");
 }
 
-void testMultiplication1(void){
-    TEST_ASSERT_EQUAL_INT(6, multiplication(3,2));
+void testMultiplicationboundary(void){
+    TEST_ASSERT_EQUAL_UINT8_MESSAGE(14, multiplication(135,2),"Unit Test Case1: testMultiplicationboundary");
+    TEST_ASSERT_EQUAL_UINT8_MESSAGE(11, multiplication(135,2),"Unit Test Case2: testMultiplicationboundary");
 }
