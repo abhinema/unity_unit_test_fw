@@ -26,6 +26,7 @@ void testAddition1(void){
 void testAdditionboundary(void){
     TEST_ASSERT_EQUAL_INT(255, addition(126,129));
     TEST_ASSERT_EQUAL_INT(255, addition(127,128));
+    TEST_ASSERT_EQUAL_INT(255, addition(130,128));
 }
 
 void testMultiplication(void){
