@@ -14,4 +14,5 @@ int main(void)
     RUN_TEST(testAdditionboundary, __LINE__);
     RUN_TEST(testMultiplication, __LINE__);
     RUN_TEST(testMultiplicationboundary, __LINE__);
+    UnityEnd();
 }
